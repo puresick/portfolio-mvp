@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-mvp",
+  "version": "1.0.0",
+  "description": "MVP version of my personal website",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "dev:nocache": "npx parcel src/index.html --no-cache",
+    "build": "NODE_ENV=production npx parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:puresick/portfolio-mvp.git"
+  },
+  "author": "Daniel Henning aka puresick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/puresick/portfolio-mvp/issues"
+  },
+  "homepage": ""
+}
