@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "npx parcel src/index.html",
     "dev:nocache": "npx parcel src/index.html --no-cache",
-    "build": "NODE_ENV=production npx parcel build"
+    "build": "rm -rf dist/* && NODE_ENV=production npx parcel build src/index.html"
+		"deploy": "npx surge dist/"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "",
   "devDependencies": {
     "autoprefixer": "^9.7.1",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "surge": "^0.21.3"
   }
 }
