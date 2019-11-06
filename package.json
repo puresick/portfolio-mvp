@@ -6,7 +6,7 @@
     "dev": "npx parcel src/index.html",
     "dev:nocache": "npx parcel src/index.html --no-cache",
     "build": "rm -rf dist/* && NODE_ENV=production npx parcel build src/index.html",
-		"deploy": "npx surge dist/"
+		"deploy": "npx surge dist/ hnnng.dev"
   },
   "repository": {
     "type": "git",
