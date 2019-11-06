@@ -91,3 +91,17 @@ svg {
 		justify-content: center;
 	}
 }
+
+@media (prefers-color-scheme: light) {
+	body { background: var(--naturalwhite) }
+	h1 { color: var(--terminalblack) }
+	h2 { color: var(--keycapgray) }
+	a { color: var(--concretegray) }
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: var(--terminalblack) }
+	h1 { color: var(--naturalwhite) }
+	h2 { color: var(--concretegray) }
+	a { color: var(--keycapgray) }
+}
