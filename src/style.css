@@ -1,15 +1,18 @@
 @font-face {
 	font-family: "Poppins Latin Bold";
+	font-display: swap;
 	src: url("../assets/fonts/PoppinsLatin-Bold.woff");
 }
 
 @font-face {
 	font-family: "Poppins Latin SemiBold";
+	font-display: swap;
 	src: url("../assets/fonts/PoppinsLatin-SemiBold.woff");
 }
 
 @font-face {
 	font-family: "Poppins Latin Regular";
+	font-display: swap;
 	src: url("../assets/fonts/PoppinsLatin-Regular.woff");
 }
 
