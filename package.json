@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "npx parcel src/index.html",
     "dev:nocache": "npx parcel src/index.html --no-cache",
-    "build": "rm -rf dist/* && NODE_ENV=production npx parcel build src/index.html"
+    "build": "rm -rf dist/* && NODE_ENV=production npx parcel build src/index.html",
+		"deploy": "git checkout master && git merge development && git push && git checkout development"
   },
   "repository": {
     "type": "git",
