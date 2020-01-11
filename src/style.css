@@ -13,6 +13,7 @@
 :root {
 	--black: #202020;
 	--white: #EBE7E2;
+	font-feature-settings: "liga" 1;
 }
 
 * {
