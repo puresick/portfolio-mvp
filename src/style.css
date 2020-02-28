@@ -20,6 +20,7 @@
 	--black: #202020;
 	--white: #EBE7E2;
 	font-feature-settings: "liga" 1;
+	--line-height: 1.25rem;
 }
 
 * {
@@ -67,7 +68,7 @@ h1 {
 
 h2 {
 	font-size: 1rem;
-	line-height: 1.125rem;
+	line-height: var(--line-height);
 	color: var(--white);
 	background: var(--black);
 	padding: 0.25rem;
@@ -79,13 +80,14 @@ nav {
 }
 
 a {
-	line-height: 1.125rem;
+	line-height: var(--line-height);
 	color: var(--black);
 	padding: 0.25rem;
+	text-decoration-thickness: 0.125rem;
 }
 
 a::before {
-	content: "->"
+	content: "->";
 }
 
 a:hover {
