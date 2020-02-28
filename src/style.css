@@ -48,7 +48,6 @@ main {
 	display: grid;
 	grid-row-gap: 2rem;
 	padding: 1rem;
-	width: 100%;
 }
 
 article {
