@@ -21,6 +21,7 @@
 	--white: #EBE7E2;
 	font-feature-settings: "liga" 1;
 	--line-height: 1.25rem;
+	--svg-size: calc(var(--line-height) * 2);
 }
 
 * {
@@ -79,6 +80,12 @@ nav {
 	flex-direction: column;
 }
 
+nav.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 a {
 	line-height: var(--line-height);
 	color: var(--black);
@@ -86,9 +93,25 @@ a {
 	text-decoration-thickness: 0.125rem;
 }
 
+nav.icons a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 a::before {
 	content: "->";
 }
+
+nav.icons a::before {
+	content: "";
+}
+
+svg {
+	height: var(--svg-size);
+	width: var(--svg-size);
+}
+
 
 a:hover {
 	color: var(--white);
