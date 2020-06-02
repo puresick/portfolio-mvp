@@ -7,6 +7,8 @@
 :root {
 	--color-black: #202020;
 	--color-white: #fbf9f8;
+	--color-green: #82c192;
+	--color-link: #fab78b;
 	--color-vuejs: #40b482;
 	--color-tailwindcss: #4cb2b3;
 	--color-nodejs: #76af62;
@@ -15,7 +17,12 @@
 	--color-email: #9c7765;
 	--color-imdsocial: #3188d4;
 	--color-xing: #016567;
+	--color-selection: #ffc726;
 	--size-text: 1.25rem;
+}
+
+::selection {
+	background: var(--color-selection)
 }
 
 body {
@@ -60,8 +67,11 @@ a {
 }
 
 a:hover {
+	background: var(--color-link);
+}
+
+a[data-type]:hover {
 	color: var(--color-white);
-	background: var(--color-black);
 }
 
 li {
