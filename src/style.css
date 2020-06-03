@@ -1,148 +1,148 @@
 @font-face {
-	font-family: "Inter Black";
+	font-family: "Inter variable";
 	font-display: swap;
-	src: url("../assets/fonts/Inter-Black.woff2");
-}
-
-@font-face {
-	font-family: "Inter Bold";
-	font-display: swap;
-	src: url("../assets/fonts/Inter-Bold.woff2");
-}
-
-@font-face {
-	font-family: "Inter Regular";
-	font-display: swap;
-	src: url("../assets/fonts/Inter-Regular.woff2");
+	src: url("../assets/fonts/Inter.var.woff2");
 }
 
 :root {
-	--black: #202020;
-	--white: #EBE7E2;
-	font-feature-settings: "liga" 1;
-	--line-height: 1.25rem;
-	--svg-size: calc(var(--line-height) * 2);
+	--color-black: #202020;
+	--color-white: #fbf9f8;
+	--color-green: #82c192;
+	--color-link: #fab78b;
+	--color-vuejs: #40b482;
+	--color-tailwindcss: #4cb2b3;
+	--color-nodejs: #76af62;
+	--color-bandbreitefm: #030f1c;
+	--color-github: #24292d;
+	--color-email: #9c7765;
+	--color-imdsocial: #3188d4;
+	--color-xing: #016567;
+	--color-selection: #ffc726;
+	--size-text: 1.25rem;
 }
 
-* {
-	box-sizing: border-box;
-}
-
-/* normalize browser styles */
-html, body, h1, h2 {
-	font-weight: unset;
-	margin: 0;
-	padding: 0;
+::selection {
+	background: var(--color-selection)
 }
 
 body {
-	font-family: "Inter Regular", sans-serif;
-	color: var(--black);
-	background: var(--white);
-	width: 100vw;
+	font-family: "Inter variable", sans-serif;
+	margin: 0;
+	padding: 0;
 	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-
-main {
-	display: grid;
-	grid-row-gap: 2rem;
-	padding: 1rem;
-	max-width: 20rem;
-}
-
-article {
-	display: grid;
-	grid-row-gap: 0.5rem;
-}
-
-h1, h2 {
-	font-family: "Inter Black", sans-serif;
-}
-
-h1 {
-	font-size: 3.5rem;
-	line-height: 4rem;
-	word-break: break-word;
-}
-
-h2 {
-	font-size: 1rem;
-	line-height: var(--line-height);
-	color: var(--white);
-	background: var(--black);
-	padding: 0.25rem;
-}
-
-nav {
-	display: flex;
-	flex-direction: column;
-}
-
-nav.icons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-a {
-	line-height: var(--line-height);
-	color: var(--black);
-	padding: 0.25rem;
-	text-decoration-thickness: 0.125rem;
-}
-
-nav.icons a {
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 }
 
-a::before {
-	content: "->";
+main {
+	max-width: 480px;
+	padding: 1rem;
 }
 
-nav.icons a::before {
-	content: "";
+h1 {
+	font-weight: 900;
+	font-size: 4rem;
+	line-height: 0.9;
+	margin: 2rem 0;
 }
 
-svg {
-	height: var(--svg-size);
-	width: var(--svg-size);
+p {
+	font-size: var(--size-text);
+	line-height: 1.5;
 }
 
+ul {
+	padding: 0 1rem;
+	margin: 0;
+}
+
+a {
+	font-weight: 900;
+	font-size: var(--size-text);
+	line-height: 1.5;
+	color: var(--color-black);
+	box-decoration-break: clone;
+	padding: 0.25rem;
+	margin: 0 -0.25rem;
+	transition: all 0.0625s ease-in-out;
+}
 
 a:hover {
-	color: var(--white);
-	background: var(--black);
+	background: var(--color-link);
 }
 
-@media (prefers-color-scheme: dark) {
-	body {
-		color: var(--white);
-		background: var(--black);
-	}
-
-	h2 {
-		color: var(--black);
-		background: var(--white);
-	}
-
-	a {
-		color: var(--white);
-	}
-
-	a:hover {
-		color: var(--black);
-		background: var(--white);
-	}
+a[data-type]:hover {
+	color: var(--color-white);
 }
 
-@media only screen and (min-width: 640px) {
-	body {
-		height: 100vh;
-		align-items: center;
-		justify-content: center;
-	}
+li {
+	margin: 0.25rem 0;
+}
+
+li a {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+[data-type="vuejs"] {
+	color: var(--color-vuejs);
+}
+
+[data-type="vuejs"]:hover {
+	background: var(--color-vuejs);
+}
+
+[data-type="tailwindcss"] {
+	color: var(--color-tailwindcss);
+}
+
+[data-type="tailwindcss"]:hover {
+	background: var(--color-tailwindcss);
+}
+
+[data-type="nodejs"] {
+	color: var(--color-nodejs);
+}
+
+[data-type="nodejs"]:hover {
+	background: var(--color-nodejs);
+}
+
+[data-type="bandbreitefm"] {
+	color: var(--color-bandbreitefm);
+}
+
+[data-type="bandbreitefm"]:hover {
+	background: var(--color-bandbreitefm);
+}
+
+[data-type="github"] {
+	color: var(--color-github);
+}
+
+[data-type="github"]:hover {
+	background: var(--color-github);
+}
+
+[data-type="email"] {
+	color: var(--color-email);
+}
+
+[data-type="email"]:hover {
+	background: var(--color-email);
+}
+
+[data-type="imdsocial"] {
+	color: var(--color-imdsocial);
+}
+
+[data-type="imdsocial"]:hover {
+	background: var(--color-imdsocial);
+}
+
+[data-type="xing"] {
+	color: var(--color-xing);
+}
+
+[data-type="xing"]:hover {
+	background: var(--color-xing);
 }
